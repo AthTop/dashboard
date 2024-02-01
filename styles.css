@@ -232,4 +232,31 @@ article .title {
 
 .trending-card {
     background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.people {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: start;
+}
+
+.people img {
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+.people .name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.people p {
+    font-size: 14px;
 }
