@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .grid-wrapper {
     height: 100vh;
     display: grid;
@@ -15,9 +20,31 @@
     grid-row: 1 / -1;
     display: grid;
     grid-template-rows: auto auto 1fr;
-    gap: 20px;
-    background-color: lightblue;
+    gap: 50px;
+    background-color: #0891b2;
     padding: 15px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.sidebar img {
+    filter: invert(1);
+    width: 20px;
+}
+
+.nav-items ul,
+.nav-support ul {
+    display: grid;
+    gap: 15px;
+}
+
+.sidebar li {
+    display: flex;
+    gap: 15px;
+}
+
+.logo > img {
+    width: 40px;
 }
 
 .logo {
@@ -31,7 +58,7 @@
 li {
     list-style: none;
     margin: 0;
-    padding: 5px;
+    padding: 0;
 }
 
 .header {
