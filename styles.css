@@ -1,3 +1,5 @@
+/* site-wide css */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,13 +10,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 .grid-wrapper {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto 1fr;
 }
+
+/* sidebar related css */
 
 .sidebar {
     grid-row: 1 / -1;
@@ -61,11 +64,84 @@ li {
     padding: 0;
 }
 
+/* header related css */
+
 .header {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px 35px;
 }
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-bar img {
+    width: 1.2rem;
+}
+
+.search-bar input {
+    height: 1.5rem;
+    width: 85%;
+    border: none;
+    border-radius: 20px;
+    background-color: #e5e7eb;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: 600;
+}
+
+.user-profile img {
+    width: 1.2rem;
+}
+
+#profile-pic {
+    width: 3rem;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.welcome img {
+    width: 5rem;
+}
+
+.message p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#username {
+    font-size: 18px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-buttons button{
+    background-color: #0891b2;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    height: 40%;
+    flex: 1;
+}
+
+/* content css */
 
 .content {
     background-color: #cccccc;
